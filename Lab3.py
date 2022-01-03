@@ -4,7 +4,7 @@ SORT_ASCENDING = 0
 SORT_DESCENDING = 1
 
 
-def bubbleSort(arr, sorting_order):
+def bubble_sort(arr, sorting_order):
 
     # Copy input list to results list
     arr_result = arr.copy()
@@ -33,12 +33,21 @@ def bubbleSort(arr, sorting_order):
 
     return arr_result
 
-# Driver code to test above
-arr = [64, 34, 25, 12, 22, 11, 90]
+def main():
+    # Driver code to test above
+    arr = [64, 34, 25, 12, 22, 11, 90]
 
-result = bubbleSort(arr, SORT_ASCENDING)
+    # Sort in ascending order
+    result = bubble_sort(arr, SORT_ASCENDING)
+    print("\nSorted array in ascending order: ")
+    print(result)
 
-print("Sorted array is:")
+    # Sort in descending order
+    print("Sorted array in ascending order: ")
+    result = bubble_sort(arr, SORT_DESCENDING)
+    print(result)
 
-for i in range(len(result)):
-    print("% d" % result[i])
+if __name__ == "__main__":
+    main()
+
+
