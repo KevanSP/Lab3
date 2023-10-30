@@ -5,7 +5,6 @@ SORT_DESCENDING = 1
 
 
 def bubble_sort(arr, sorting_order):
-
     # Copy input list to results list
     arr_result = arr.copy()
 
@@ -38,6 +37,7 @@ def bubble_sort(arr, sorting_order):
 
     return arr_result
 
+
 def main():
     # Driver code to test above
     arr = [64, 34, 25, 12, 22, 11, 90]
@@ -52,7 +52,6 @@ def main():
     result = bubble_sort(arr, SORT_DESCENDING)
     print(result)
 
+
 if __name__ == "__main__":
     main()
-
-
